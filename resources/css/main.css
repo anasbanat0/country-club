@@ -69,7 +69,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right bottom, rgba(226, 181, 168, 0.5), rgba(187, 212, 235, 0.5)), url(img/header-image-1-medium.jpg);
+    background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.5), rgba(79, 97, 42, 0.5)), url(img/header-image-1-medium.jpg);
     background-position: top;
     background-size: cover;
     animation: fade1 10s infinite; }
@@ -103,3 +103,11 @@ body {
     background-position: top;
     background-size: cover;
     animation: fade4 10s infinite; }
+  .header__logo-box {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__logo {
+    height: 25rem; }
