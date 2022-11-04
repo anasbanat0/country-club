@@ -13,3 +13,11 @@
   background-position: top;
   background-size: cover;
 }
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
