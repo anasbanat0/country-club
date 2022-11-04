@@ -3,59 +3,33 @@
   position: relative;
 
   &__slider--1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: linear-gradient(to right bottom, rgba($primary-light, .5), rgba($primary-dark, .5)), url(img/header-image-1-medium.jpg);
-    background-position: top;
-    background-size: cover;
+    @include slider-image;
     animation: fade1 10s infinite;
   }
 
   &__slider--2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: linear-gradient(to right bottom, rgba($primary-light, .5), rgba($primary-dark, .5)), url(img/header-image-2-medium.jpg);
-    background-position: top;
-    background-size: cover;
+    @include slider-image;
     animation: fade2 10s infinite;
   }
 
   &__slider--3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: linear-gradient(to right bottom, rgba($primary-light, .5), rgba($primary-dark, .5)), url(img/header-image-3-medium.jpg);
-    background-position: top;
-    background-size: cover;
+    @include slider-image;
     animation: fade3 10s infinite;
   }
 
   &__slider--4 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: linear-gradient(to right bottom, rgba($primary-light, .5), rgba($primary-dark, .5)), url(img/header-image-4-medium.jpg);
-    background-position: top;
-    background-size: cover;
+    @include slider-image;
     animation: fade4 10s infinite;
   }
 
   &__logo-box {
     position: absolute;
     top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    @include center-object;
   }
 
   &__logo {
@@ -65,16 +39,12 @@
   &__text-box {
     position: absolute;
     top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    @include center-object;
   }
 
   &__btn-box {
     position: absolute;
     top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    @include center-object;
   }
 }
