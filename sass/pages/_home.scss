@@ -1,4 +1,17 @@
+.about-section,
+.amenities-section {
+  padding: 7rem 0;
+}
+
 .about-section {
   background-color: $grey-light-1;
-  padding: 7rem 0;
+}
+
+.amenities-section {
+  background-color: $white;
+}
+
+.testimonials-section {
+  padding: 15rem 0;
+  position: relative;
 }
