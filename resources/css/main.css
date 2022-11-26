@@ -104,6 +104,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-bottom-medium {
+  margin-bottom: 2.5rem; }
+
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
@@ -229,15 +232,25 @@ body {
   font-size: 1.6rem;
   transition: all .2s; }
 
-.btn-rectangular:hover {
+.btn-rectangular--white:hover, .btn-rectangular:hover {
   background-color: #846c38;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   transform: translateY(-3px); }
 
-.btn-rectangular:active {
+.btn-rectangular--white:active, .btn-rectangular:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+
+.btn-rectangular--white:link, .btn-rectangular--white:visited {
+  color: #fff;
+  border-bottom: 1px solid #fff; }
+
+.btn-rectangular--white {
+  color: #fff; }
+
+.btn-rectangular--white:hover {
+  border-bottom: 1px solid transparent; }
 
 .composition {
   position: relative;
@@ -498,6 +511,107 @@ body {
     font-size: 1.5rem;
     text-transform: uppercase; }
 
+.contact {
+  height: 53rem;
+  background-image: radial-gradient(circle closest-corner at 75% 52%, transparent 0%, transparent 50%, rgba(40, 180, 133, 0.4) 50%), url(./img/contact-form-img-2.jpg);
+  background-size: 100%;
+  background-position: left 50%;
+  border-radius: 3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  .contact__form {
+    width: 50%;
+    padding: 6rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 100%;
+  border-radius: 2px;
+  font-family: inherit;
+  outline: none;
+  color: #333;
+  opacity: 1;
+  border-bottom: 3px solid transparent;
+  transition: all .3s; }
+  .form__input::-webkit-input-placeholder {
+    color: #333; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #4f612a; }
+  .form__input:invalid {
+    border-bottom: 3px solid #876C64; }
+
+.form__input:placeholder-shown ~ .form__label {
+  opacity: 0;
+  transform: translateY(-4rem); }
+
+.form__label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-bottom: .7rem;
+  color: #fff;
+  display: block; }
+
+.form__group {
+  margin-bottom: 3rem; }
+
+.form__radio-group {
+  display: inline-block;
+  width: 30%; }
+
+.form__radio-input:checked + .form__radio-label .form__radio-button::after {
+  opacity: 1; }
+
+.form__radio-label {
+  font-size: 1.6rem;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 5rem;
+  position: relative; }
+
+.form__radio-input {
+  display: none; }
+
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-image: url(./img/golf-ball-texture-small.jpg);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .form__radio-button::after {
+    content: '';
+    display: block;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    background-color: #28b485;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: .2s all; }
+
+.form__textarea {
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: #333;
+  width: 100%;
+  height: 10rem;
+  padding: 1.5rem 1rem; }
+
 .about-section,
 .amenities-section {
   padding: 7rem 0; }
@@ -517,3 +631,8 @@ body {
 .membership-section {
   padding: 15rem 0;
   background-color: #f7f7f7; }
+
+.contact-section {
+  padding-top: 5rem;
+  background-color: #fff;
+  margin-bottom: 2rem; }
